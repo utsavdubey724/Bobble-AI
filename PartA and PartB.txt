@@ -1,0 +1,136 @@
+Bobble AI interview/ assignment questions
+
+Name: Utsav Dubey
+Course: B.Tech
+Branch: Computer Science and Engineering
+Registration Number: 201700433
+
+
+
+Part A: MCQ
+
+Ans 1: (B) 19/59
+
+Ans 2: (B) False positive
+
+Ans 3: (B)
+
+Ans 4: (D) θ​ 0​ =0,θ​ 1​ =0.5
+
+Ans 5: (C) Statement 1 and Statement 4 are correct
+
+Ans 6: (D) Statement 2 and Statement 3 are correct
+
+Ans 7: (A) Statement 1 and Statement 3 are correct
+
+Ans 8: (D) Random forest
+
+Ans 9: (D) All of the above
+
+Ans 10: (C) Both A and B
+
+Ans 11: (A) Normalize the data -> PCA -> training
+
+Ans 12: (D) All of the above
+
+Ans 13: (C) Both A and B
+
+Ans 14: (D) None of the above
+
+Ans 15: (B) Use multiple radom initializations
+
+Ans 16: (C) 1,2 and 3
+
+Ans 17: (A) Choose k to be the smallest value so that at least 99% of the varinace is retained
+
+Ans 18: (C) a=0.3 is an effective choice of learning rate
+
+Ans 19: (A) NAND (meaning “NOT AND”)
+
+Ans 20: (C) 8/10
+
+Ans 21: (B) Image translation
+
+Ans 22: (B) Median filter
+
+Ans 23: (B) LAB
+
+Ans 24: (C) The process of adding layers of zeros to an image
+
+Ans 25: (A) Zero
+
+
+
+Part B: Fill in the blanks with correct option
+
+Ans 1: decrease
+
+Ans 2: non-linear,
+       classification,
+       decrease
+
+Ans 3: classification
+
+Ans 4: testing,
+       training
+
+Ans 5: -1 to 256
+
+
+
+
+Part C: Long Questions
+
+
+Ans 3: Source Code in Python3
+
+
+
+def modifyRC(mat, M, N, x, y):
+
+	for j in range(N):
+		if mat[x][j]:
+			mat[x][j] = -1
+
+	for i in range(M):
+		if mat[i][y]:
+			mat[i][y] = -1
+
+def changeMatrix(mat):
+	(M, N) = (len(mat), len(mat[0]))
+	for i in range(M):
+		for j in range(N):
+			if mat[i][j] == 0:
+
+				modifyRC(mat, M, N, i, j)
+	for i in range(M):
+		for j in range(N):
+			if mat[i][j] == -1:
+				mat[i][j] = 0
+
+if __name__ == '__main__':
+
+	mat = [
+		[1, 1, 0, 1, 1],
+		[1, 1, 1, 1, 1],
+		[1, 1, 0, 1, 1],
+		[1, 1, 1, 1, 1],
+		[0, 1, 1, 1, 1]
+	]
+	changeMatrix(mat)
+	for r in mat:
+		print(r)
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
